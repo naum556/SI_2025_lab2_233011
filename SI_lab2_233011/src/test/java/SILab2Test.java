@@ -102,7 +102,7 @@ public class SILab2Test {
 
         double result2 = SILab2.checkCart(items2, "1234567891234567");
 
-        assertTrue(item1.getPrice() > 300 || item1.getDiscount() > 0 || item1.getQuantity() > 10);
+        assertTrue(item2.getPrice() > 300 || item2.getDiscount() > 0 || item2.getQuantity() > 10);
 
         assertEquals(9.999999999999993, result2);
 
@@ -114,8 +114,19 @@ public class SILab2Test {
 
         double result3 = SILab2.checkCart(items3, "1234567891234567");
 
-        assertTrue(item1.getPrice() > 300 || item1.getDiscount() > 0 || item1.getQuantity() > 10);
+        assertTrue(item3.getPrice() > 300 || item3.getDiscount() > 0 || item3.getQuantity() > 10);
 
         assertEquals(3970, result3);
+
+        //F F F
+        Item item4 = new Item("name",5, 200, 0);
+
+        List<Item> items4 = List.of(item4);
+
+        double result4 = SILab2.checkCart(items4, "1234567891234567");
+
+        assertFalse(item4.getPrice() > 300 || item4.getDiscount() > 0 || item4.getQuantity() > 10);
+
+        assertEquals(1000, result4);
     }
 }

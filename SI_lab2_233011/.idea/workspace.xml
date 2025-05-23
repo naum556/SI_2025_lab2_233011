@@ -22,9 +22,24 @@
       </list>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "naum556"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/naum556/SI_2025_lab2_233011",
+    "accountId": "e843568a-4f3d-4ba3-b144-a5529f61cd29"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2xGuAxIO8xx4jIfBu53Tg88R7lM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -34,6 +49,7 @@
   "keyToString": {
     "Gradle.SILab2Test.EveryStatementCriterium.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
@@ -87,6 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1747576592600</updated>
       <workItem from="1747576593634" duration="88000" />
+      <workItem from="1748035143920" duration="13000" />
     </task>
     <servers />
   </component>
