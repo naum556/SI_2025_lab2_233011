@@ -132,13 +132,13 @@ https://github.com/naum556/SI_2025_lab2_233011/blob/main/Multiple%20Conditions%2
 
         //F T X
 
-        Item item2 = new Item("name",1, 200, 0.8);
+       Item item2 = new Item("name",1, 200, 0.8);
 
         List<Item> items2 = List.of(item2);
 
         double result2 = SILab2.checkCart(items2, "1234567891234567");
 
-        assertTrue(item1.getPrice() > 300 || item1.getDiscount() > 0 || item1.getQuantity() > 10);
+        assertTrue(item2.getPrice() > 300 || item2.getDiscount() > 0 || item2.getQuantity() > 10);
 
         assertEquals(9.999999999999993, result2);
 
@@ -146,28 +146,28 @@ https://github.com/naum556/SI_2025_lab2_233011/blob/main/Multiple%20Conditions%2
 
         //F F T
 
-        Item item3 = new Item("name",20, 200, 0);
+       Item item3 = new Item("name",20, 200, 0);
 
         List<Item> items3 = List.of(item3);
 
         double result3 = SILab2.checkCart(items3, "1234567891234567");
 
-        assertTrue(item1.getPrice() > 300 || item1.getDiscount() > 0 || item1.getQuantity() > 10);
+        assertTrue(item3.getPrice() > 300 || item3.getDiscount() > 0 || item3.getQuantity() > 10);
 
         assertEquals(3970, result3);
 
         Во овој тест случај првите два услови враќаат false но последниот враќа true па затоа на крај ќе испадне true. Исто така проверуваме дали сумата која ја враќа функцијата ќе е точна.
 
         //F F F
-        Item item3 = new Item("name",5, 200, 0);
+        Item item4 = new Item("name",5, 200, 0);
 
-        List<Item> items3 = List.of(item3);
+        List<Item> items4 = List.of(item4);
 
-        double result3 = SILab2.checkCart(items3, "1234567891234567");
+        double result4 = SILab2.checkCart(items4, "1234567891234567");
 
-        assertTrue(item1.getPrice() > 300 || item1.getDiscount() > 0 || item1.getQuantity() > 10);
+        assertFalse(item4.getPrice() > 300 || item4.getDiscount() > 0 || item4.getQuantity() > 10);
 
-        assertEquals(1000, result3);
+        assertEquals(1000, result4);
         
     Во овој тест случај сите барања се false a очекуваниот резултат кој треба да се врати е 1000.
 
